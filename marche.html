@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Marche gourmande</title>
+    <style>
+        body {
+            font-family: "Inter", Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #dfeee3, #f3f7f0);
+            color: #333;
+        }
+
+        /* HEADER GLASSMORPHISM + DÉGRADÉ VERT → JAUNE */
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 20;
+            backdrop-filter: blur(14px);
+            background: linear-gradient(
+                90deg,
+                rgba(29, 107, 42, 0.55) 0%,   /* Vert club */
+                rgba(224, 180, 0, 0.55) 100%  /* Jaune club */
+            );
+            padding: 12px 25px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1px solid rgba(255,255,255,0.4);
+            box-shadow:
+                4px 4px 10px rgba(0,0,0,0.08),
+                -4px -4px 10px rgba(255,255,255,0.6);
+        }
+
+        /* LOGO STYLE C — carré arrondi */
+        .logo-box {
+            width: 55px;
+            height: 55px;
+            border-radius: 14px;
+            background: rgba(255,255,255,0.7);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            box-shadow:
+                6px 6px 12px rgba(0,0,0,0.12),
+                -6px -6px 12px rgba(255,255,255,0.8);
+        }
+
+        .logo-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        header .title {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        header h1 {
+            font-size: 1.4em;
+            margin: 0;
+            letter-spacing: -0.5px;
+            font-weight: 700;
+            color: white;
+            text-shadow: 0 1px 2px rgba(0,0,0,0.25);
+        }
+
+        /* NAVIGATION */
+        nav a {
+            margin-left: 20px;
+            text-decoration: none;
+            font-weight: 600;
+            color: white;
+            padding: 6px 12px;
+            border-radius: 10px;
+            transition: 0.2s ease;
+            text-shadow: 0 1px 2px rgba(0,0,0,0.25);
+        }
+
+        nav a:hover {
+            background: rgba(255,255,255,0.35);
+            box-shadow:
+                3px 3px 6px rgba(0,0,0,0.1),
+                -3px -3px 6px rgba(255,255,255,0.7);
+        }
+
+        /* CONTENT */
+        .container {
+            padding: 35px;
+        }
+
+        /* GRID */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+            gap: 30px;
+        }
+
+        /* NEUMORPHISM CARD + COULEURS */
+        .card {
+            background: #e8f3ea;
+            padding: 25px;
+            border-radius: 20px;
+            box-shadow:
+                8px 8px 16px #c5d1c8,
+                -8px -8px 16px #ffffff;
+            transition: 0.25s ease;
+            border-left: 6px solid #1d6b2a;
+        }
+
+        .card:hover {
+            transform: translateY(-6px);
+            box-shadow:
+                12px 12px 24px #c5d1c8,
+                -12px -12px 24px #ffffff;
+        }
+
+        .card a {
+            font-size: 1.2em;
+            font-weight: 700;
+            color: #1d6b2a;
+            text-decoration: none;
+        }
+
+        .card a:hover {
+            color: #e0b400;
+        }
+
+        .desc {
+            margin-top: 10px;
+            font-size: 0.95em;
+            color: #4a5c4f;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="title">
+            <div class="logo-box">
+                <img src="logo.png" alt="Logo">
+            </div>
+            <h1>S.C. Roeschwoog</h1>
+        </div>
+
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="reunions_general.html">Réunions</a>
+			      <a href="marche.html">Marche gourmande</a>
+			      <a href="winterparty.html">Winterparty</a>
+            <a href="contacts.html">Membres</a>
+        </nav>
+    </header>
+
+
+    <div class="container">
+        <div class="grid">
+
+            <div class="card">
+                <a href="">xx/xx/xxxx</a>
+                <div class="desc">Marche, Winterparty, Equipe 1</div>
+            </div>
+
+ 
+
+        </div>
+    </div>
+	
+	<footer class="footer">
+        &copy; SC Roeschwoog – Comptes-rendus de réunions
+    </footer>
+
+</body>
+</html>
